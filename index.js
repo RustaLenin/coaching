@@ -8,3 +8,11 @@ function switch_body_backgroud_color() {
         body.classList.add('white');
     }
 }
+
+function show_modal() {
+    document.querySelector('.ModalContainer').classList.remove('hidden');
+}
+
+function close_modal( elem ) {
+    elem.closest('.ModalContainer').classList.add('hidden');
+}
