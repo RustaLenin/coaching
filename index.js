@@ -16,3 +16,9 @@ function show_modal() {
 function close_modal( elem ) {
     elem.closest('.ModalContainer').classList.add('hidden');
 }
+
+function submitModal(elem) {
+    let form = elem.closest('.modal').querySelector('.form');
+    let data = collectData( form );
+    console.log(data);
+}
